@@ -13,7 +13,7 @@ import net.minecraft.util.Identifier;
 
 public class ModBlocks {
 
-    public static final Block MANA_CRYSTAL = registerBlock("mana_crystal", new Block(FabricBlockSettings.copyOf(Blocks.AMETHYST_BLOCK)));
+    public static final Block MANA_CRYSTAL = registerBlock("mana_crystal", new Block(FabricBlockSettings.copyOf(Blocks.AMETHYST_CLUSTER)));
     private static Block registerBlock(String name, Block block){
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, new Identifier(SoloLeveling.MOD_ID, name), block);
@@ -25,7 +25,6 @@ public class ModBlocks {
 
     public static void registerModBlocks() {
         SoloLeveling.LOGGER.info("Registering ModBLocks for " + SoloLeveling.MOD_ID);
-        //Registry.register(registry, new Identifier("yourmodid", "ant_hill"), ANT_HILL);
     }
 
 }

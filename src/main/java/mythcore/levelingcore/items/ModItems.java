@@ -10,6 +10,7 @@ import net.minecraft.util.Identifier;
 public class ModItems {
 
     //public static final Item ANTHILL = registerItem("anthill", new Item(new FabricItemSettings()));
+    public static final Item CRYSTAL_SHARD = registerItem("crystal_shard", new Item(new FabricItemSettings()));
 
 
 
