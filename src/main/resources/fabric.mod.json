@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "solo-leveling",
+	"version": "${version}",
+	"name": "Solo Leveling",
+	"description": "Solo Leveling Minecraft Mod",
+	"authors": [
+		"mythcore"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/solo-leveling/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"mythcore.levelingcore.SoloLeveling"
+		],
+		"client": [
+			"mythcore.levelingcore.SoloLevelingClient"
+		],
+		"fabric-datagen": [
+			"mythcore.levelingcore.SoloLevelingDataGenerator"
+		]
+	},
+	"mixins": [
+		"solo-leveling.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.7",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
