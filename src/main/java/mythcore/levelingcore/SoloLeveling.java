@@ -1,5 +1,8 @@
 package mythcore.levelingcore;
 
+import mythcore.levelingcore.blocks.ModBlocks;
+import mythcore.levelingcore.items.ModItemGroups;
+import mythcore.levelingcore.items.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -13,7 +16,8 @@ public class SoloLeveling implements ModInitializer {
 	@Override
 	public void onInitialize() {
 
-
-		LOGGER.info("Hello Fabric world!");
+		ModItems.registerModItems();
+		ModItemGroups.registerItemGroups();
+		ModBlocks.registerModBlocks();
 	}
 }
